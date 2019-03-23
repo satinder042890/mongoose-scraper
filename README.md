@@ -15,13 +15,13 @@ The application uses "request" and "cheerio" for scraping the Daily Universe HTM
 ## Saved Articles
 The articles are saved to the database with the help of the Mongoose NPM. According to their page, "Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment." This application uses Article and Note models with the Article model containing an array "note" that stores the ObjectIds of any associated Note. From the Saved Articles page, the client can delete an article from the database or navigate to the article's Note/Comment page in order to see any associated notes/comments or to make a comment. The data on all routes is redered with "express-handlebars".
 
-![alt text]()
+![alt text](https://github.com/satinder042890/mongoose-scraper/blob/master/public/css/images/saved.png)
 
 
 ## Comment Section
 The client can make a note or read a comment by navigating to the "/articles/_id" route where the user can read, delete, or create a comment/note.
 
-![alt text]()
+![alt text](https://github.com/satinder042890/mongoose-scraper/blob/master/public/css/images/comment.png)
 
 
 ## Application Heroku Link
