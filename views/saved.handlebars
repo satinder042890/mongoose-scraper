@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-dark bg-dark">
+    <img id="logopic" src="https://media.giphy.com/media/l0MYDzlBdiocY3UNq/giphy.gif">
+    <h1 class="navbar-brand">Latest News With Mongo Scrapper</h1>
+    <form class="form-inline">
+      <a href="/"><button class="btn btn btn-success mr-sm-2" type="button">Home Page</button></a>
+      <a href="/scrape"><button class="btn btn btn-success  my-2 my-sm-0" type="button">Scraped Articles</button></a>
+    </form>
+  </nav>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      {{#each saved}}
+      <div class="col-6">
+        <div class="container" id="mainDisplaySection">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-3">
+              <img id="image-{{@index}}" class="newsImage" src="{{this.image}}">
+            </div>
+            <div class="col-12 col-md-9">
+              <h4 id="title-{{@index}}">{{this.title}}</h4>
+              <p id="time-{{@index}}">{{this.time}}</p>
+              <a href="{{this.link}}" id="link-{{@index}}" target="_blank"><button class="btn btn-success" data-id={{@index}}
+                  id="save-article">Go To Article</button></a>
+              <button class="btn btn-success" data-id={{this._id}} id="delete-article">Delete Article</button>
+              <button class="btn btn-success" data-id={{this._id}} id="note-comment">Comment</button>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+      {{/each}}
+    </div>
+
+  </div>
+</div>
