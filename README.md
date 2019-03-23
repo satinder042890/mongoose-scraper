@@ -2,7 +2,8 @@
 A web app that lets users view and leave comments on the latest news.
 This full-stack application allows a client to scrape headlines, links, images, time from the Daily Universe website. The client can then save the articles in a database, delete saved articles, make notes on specific articles, and delete those notes.
 
-![alt'(https://github.com/satinder042890/mongoose-scraper/blob/master/public/css/images/startscreen.gif)
+![alt text](https://github.com/satinder042890/mongoose-scraper/blob/master/public/css/images/startscreen.gif)
+
 
 
 ## Scraping
